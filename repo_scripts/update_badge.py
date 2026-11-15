@@ -49,7 +49,7 @@ def main() -> None:
     repo_token = os.environ["REPO_TOKEN"]
     gist_token = os.environ["GIST_TOKEN"]
     gist_id = os.environ.get("GIST_ID", "3e9b5513788bd4a8af48560724376534")
-    repo_name = os.environ.get("GITHUB_REPOSITORY", "hitechcloud-vietnam/dgxarley")
+    repo_name = os.environ.get("GITHUB_REPOSITORY", "hitechcloudvn/dgxarley")
 
     history_filename = "dgxarley_clone_history.json"
     badge_filename = "dgxarley_clone_count.json"

@@ -75,9 +75,9 @@ build = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/hitechcloud-vietnam/dgxarley"
-Repository = "https://github.com/hitechcloud-vietnam/dgxarley"
-Issues = "https://github.com/hitechcloud-vietnam/dgxarley/issues"
+Homepage = "https://github.com/hitechcloudvn/dgxarley"
+Repository = "https://github.com/hitechcloudvn/dgxarley"
+Issues = "https://github.com/hitechcloudvn/dgxarley/issues"
 
 
 

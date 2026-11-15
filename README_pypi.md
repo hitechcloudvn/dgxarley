@@ -1,6 +1,6 @@
-[![mypy and pytests](https://github.com/hitechcloud-vietnam/dgxarley/actions/workflows/mypynpytests.yml/badge.svg)](https://github.com/hitechcloud-vietnam/dgxarley/actions/workflows/mypynpytests.yml)
-[![black-lint](https://github.com/hitechcloud-vietnam/dgxarley/actions/workflows/checkblack.yml/badge.svg)](https://github.com/hitechcloud-vietnam/dgxarley/actions/workflows/checkblack.yml)
-[![Cumulative Clones](https://img.shields.io/endpoint?logo=github&url=https://gist.githubusercontent.com/hitechcloud-vietnam/3e9b5513788bd4a8af48560724376534/raw/dgxarley_clone_count.json)](https://github.com/hitechcloud-vietnam/dgxarley)
+[![mypy and pytests](https://github.com/hitechcloudvn/dgxarley/actions/workflows/mypynpytests.yml/badge.svg)](https://github.com/hitechcloudvn/dgxarley/actions/workflows/mypynpytests.yml)
+[![black-lint](https://github.com/hitechcloudvn/dgxarley/actions/workflows/checkblack.yml/badge.svg)](https://github.com/hitechcloudvn/dgxarley/actions/workflows/checkblack.yml)
+[![Cumulative Clones](https://img.shields.io/endpoint?logo=github&url=https://gist.githubusercontent.com/hitechcloudvn/3e9b5513788bd4a8af48560724376534/raw/dgxarley_clone_count.json)](https://github.com/hitechcloudvn/dgxarley)
 
 
 # dgxarley
@@ -10,18 +10,18 @@ Tooling for the DGX Arley K3s inference cluster — integration tests, streaming
 
 **Heureka! — Qwen3-235B-A22B MoE (AWQ 4-bit) running distributed inference across both DGX Sparks:**
 
-![235B AWQ Heureka](https://raw.githubusercontent.com/hitechcloud-vietnam/dgxarley/main/media/Bildschirmfoto_2026-03-17_21-53-58_blurred.png)
+![235B AWQ Heureka](https://raw.githubusercontent.com/hitechcloudvn/dgxarley/main/media/Bildschirmfoto_2026-03-17_21-53-58_blurred.png)
 
 
 ### `sglang-raw` — Dual-panel SSE stream viewer
 
-![sglang-raw: rendered response + raw JSON chunks](https://raw.githubusercontent.com/hitechcloud-vietnam/dgxarley/main/media/Bildschirmfoto_2026-03-18_17-29-30_blurred.png)
+![sglang-raw: rendered response + raw JSON chunks](https://raw.githubusercontent.com/hitechcloudvn/dgxarley/main/media/Bildschirmfoto_2026-03-18_17-29-30_blurred.png)
 
 Dual-panel Rich TUI for inspecting SGLang's OpenAI-compatible streaming API in real time. The top half renders the AI response as it arrives, while the bottom half displays the raw JSON SSE stream chunks — showing fields like `chat_completion_chunk`, `choices`, `delta`, `finish_reason`, and `model`. Useful for debugging streaming behaviour, verifying token delivery, and understanding the wire format of the API.
 
 ### `sglang-raw` — Think/text token classification
 
-![sglang-raw: token table with think/text classification](https://raw.githubusercontent.com/hitechcloud-vietnam/dgxarley/main/media/Bildschirmfoto_2026-03-18_17-35-04_blurred.png)
+![sglang-raw: token table with think/text classification](https://raw.githubusercontent.com/hitechcloudvn/dgxarley/main/media/Bildschirmfoto_2026-03-18_17-35-04_blurred.png)
 
 Token-level stream inspection with per-chunk breakdown in a structured table. Columns show the token type (`think` vs `text`), content, finish reason, and cumulative token count — visualizing how reasoning tokens (from `<think>...</think>` blocks) are separated from the actual output tokens. This view helps when tuning thinking budgets, verifying `reasoning_parser` behaviour, or diagnosing unexpected token classification.
 
@@ -41,11 +41,11 @@ Token-level stream inspection with per-chunk breakdown in a structured table. Co
 
 ### `kceve-kvm-web` — KCEVE KVM1001A Web UI
 
-![kceve-kvm-web: KVM switch control via browser](https://raw.githubusercontent.com/hitechcloud-vietnam/dgxarley/main/media/Bildschirmfoto_2026-04-04_17-09-49.png)
+![kceve-kvm-web: KVM switch control via browser](https://raw.githubusercontent.com/hitechcloudvn/dgxarley/main/media/Bildschirmfoto_2026-04-04_17-09-49.png)
 
 Browser-based control panel for the KCEVE KVM1001A 10-port KVM switch via RS232 serial. Shows the currently active input port on a virtual 7-segment display and allows switching between all 10 inputs with a single click. Commands are sent over a USB-to-RS232 adapter at 115200 baud using the `X<channel>,1$` ASCII protocol.
 
-[Demo video](https://raw.githubusercontent.com/hitechcloud-vietnam/dgxarley/main/media/simplescreenrecorder-2026-04-04_17.10.24.mp4)
+[Demo video](https://raw.githubusercontent.com/hitechcloudvn/dgxarley/main/media/simplescreenrecorder-2026-04-04_17.10.24.mp4)
 
 <details>
 <summary>Remote test setup (serial over SSH tunnel)</summary>
@@ -110,10 +110,10 @@ for chunk in llm_stream:
 
 ## Source & documentation
 
-Full documentation, network architecture, and Ansible playbooks: [GitHub](https://github.com/hitechcloud-vietnam/dgxarley)
+Full documentation, network architecture, and Ansible playbooks: [GitHub](https://github.com/hitechcloudvn/dgxarley)
 
 ## License
-This project is licensed under the LGPL where applicable/possible — see [LICENSE.md](https://github.com/hitechcloud-vietnam/dgxarley/blob/main/LICENSE.md). Some files/parts may use other licenses: [MIT](https://github.com/hitechcloud-vietnam/dgxarley/blob/main/LICENSEMIT.md) | [GPL](https://github.com/hitechcloud-vietnam/dgxarley/blob/main/LICENSEGPL.md) | [LGPL](https://github.com/hitechcloud-vietnam/dgxarley/blob/main/LICENSELGPL.md). Always check per‑file headers/comments.
+This project is licensed under the LGPL where applicable/possible — see [LICENSE.md](https://github.com/hitechcloudvn/dgxarley/blob/main/LICENSE.md). Some files/parts may use other licenses: [MIT](https://github.com/hitechcloudvn/dgxarley/blob/main/LICENSEMIT.md) | [GPL](https://github.com/hitechcloudvn/dgxarley/blob/main/LICENSEGPL.md) | [LGPL](https://github.com/hitechcloudvn/dgxarley/blob/main/LICENSELGPL.md). Always check per‑file headers/comments.
 
 
 ## Authors

@@ -107,7 +107,7 @@ def print_banner(module: str = "dgxarley") -> None:
     startup_rows = [
         ["version", __version__],
         ["buildtime", os.environ.get("BUILDTIME", "n/a")],
-        ["github", "https://github.com/hitechcloud-vietnam/dgxarley"],
+        ["github", "https://github.com/hitechcloudvn/dgxarley"],
     ]
     table_str = tabulate(startup_rows, tablefmt="mixed_grid")
     lines = table_str.split("\n")

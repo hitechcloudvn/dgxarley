@@ -89,7 +89,7 @@ Tesseract returns bounding boxes per WORD. Patterns are matched at two levels:
     Example: --blur-regex "rVFe\S+" matches "rVFeSJeIA6kb5Kwi0TjE5rWq7su4zrb6"
     Example: --blur-regex "session id \S+" matches "session id +1TqgiGcW4h5bQ0G..."
     Example: --blur-regex "[A-Z]{8,}" matches ONLY uppercase device IDs like "UZTBBJTHZW"
-             (does NOT match "hitechcloud-vietnam" — no global IGNORECASE on regex patterns)
+             (does NOT match "hitechcloudvn" — no global IGNORECASE on regex patterns)
 
   Hardcoded patterns (always active):
     PXL.*              — PXL-prefixed camera file names
